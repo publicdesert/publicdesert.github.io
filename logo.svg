@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="65.404961mm"
+   height="35.83078mm"
+   viewBox="0 0 65.404961 35.83078"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.2.1 (9c6d41e410, 2022-07-14)"
+   inkscape:export-filename="bitmap.png"
+   inkscape:export-xdpi="200"
+   inkscape:export-ydpi="200"
+   sodipodi:docname="drawing.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#363636"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="2.1266375"
+     inkscape:cx="109.56263"
+     inkscape:cy="145.77002"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="0"
+     inkscape:window-y="329"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-1.5,-1.6436859)">
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:25.4px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="1.5"
+       y="18.610886"
+       id="text110"><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:25.4px;font-family:'Dot Spot';-inkscape-font-specification:'Dot Spot';fill:#db8535;fill-opacity:1;stroke-width:0.264583"
+         x="1.5"
+         y="18.610886"
+         id="tspan112">Public</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:25.4px;line-height:1.25;font-family:'Dot Spot';-inkscape-font-specification:'Dot Spot';fill:#444444;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="1.5"
+       y="37.474464"
+       id="text276"><tspan
+         sodipodi:role="line"
+         id="tspan274"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:25.4px;font-family:'Dot Spot';-inkscape-font-specification:'Dot Spot';fill:#444444;fill-opacity:1;stroke-width:0.264583"
+         x="1.5"
+         y="37.474464">Desert</tspan></text>
+  </g>
+</svg>

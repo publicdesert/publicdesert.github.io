@@ -1,0 +1,45 @@
+---
+layout: default
+title: Blog
+pagination:
+  enabled: true
+permalink: /blog/
+---
+
+
+<h2>All Posts</h2>
+
+{% if paginator %}
+  <ul class="postlist">
+    {% for post in paginator.posts %}
+      <li>
+        <b><a href="{{ post.url | relative_url }}">{{ post.title }}</a></b>
+        | {{ post.date | date: "%b %-d, %Y" }}
+        <div class="excerpt">{{ post.excerpt }}</div>
+      </li>
+    {% endfor %}
+  </ul>
+
+  <nav class="pagination">
+    {% if paginator.previous_page %}
+      <a href="{{ paginator.previous_page_path | relative_url }}">&larr; Newer</a>
+    {% endif %}
+    <span>Page {{ paginator.page }} of {{ paginator.total_pages }}</span>
+    {% if paginator.next_page %}
+      <a href="{{ paginator.next_page_path | relative_url }}">Older &rarr;</a>
+    {% endif %}
+  </nav>
+
+{% else %}
+  <!-- Fallback when no pagination plugin is active -->
+  <ul class="postlist">
+    {% for post in site.posts %}
+      <li>
+        <b><a href="{{ post.url | relative_url }}">{{ post.title }}</a></b>
+        | <i>{{ post.date | date: "%b %-d, %Y" }}</i>
+        <div class="excerpt">{{ post.excerpt }}</div>
+      </li>
+    {% endfor %}
+  </ul>
+{% endif %}
+

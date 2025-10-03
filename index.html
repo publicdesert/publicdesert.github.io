@@ -1,0 +1,36 @@
+---
+layout: default
+title: Home
+wide: true
+---
+
+<div class="two-col">
+  <section class="posts">
+    <h2>Posts</h2>
+    <p>Nothing yet. Subscribe to the RSS feed using the link in the header, so you don't miss anything! :)</p>
+    <!--
+    <ul class="postlist">
+      {% for post in site.posts limit:5 %}
+      <li>
+        <b><a href="{{ post.url | relative_url }}">{{ post.title }}</a></b>
+        | {{ post.date | date: "%b %-d, %Y" }}
+        <div class="excerpt">
+          {{ post.excerpt }}
+        </div>
+      </li>
+      {% endfor %}
+    </ul>
+
+    <p><a href="{{ '/blog/' | relative_url }}"><b>All posts...</b></a></p>
+  -->
+  </section>
+
+  <aside class="projects">
+    <h2>Projects</h2>
+    {% capture proj_md %}
+      {% include projects-list.md %}
+    {% endcapture %}
+    {{ proj_md | markdownify }}
+  </aside>
+</div>
+

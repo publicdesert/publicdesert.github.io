@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>{{ page.title }} | pyramiden.net</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="{{ '/assets/style.css' | relative_url }}" rel="stylesheet">
+  </head>
+  <body>
+
+    <!-- Header -->
+    <div class="site-header">
+      <a href="{{ '/index.html' | relative_url }}">
+        <img src="{{ '/banner.png' | relative_url }}" alt="Logo">
+      </a>
+      
+      <a href="/assets/mailaddress.jpg">
+        <img src="{{ '/assets/email2.gif' | relative_url }}" style="float:right" loading="lazy" />
+      </a>
+      <a href="{{ '/feed.xml' | relative_url }}">
+        <img src="{{ '/assets/subscribe2.gif' | relative_url }}" style="float:right" loading="lazy" />
+      </a>
+      <a href="https://github.com/publicdesert">
+        <img src="{{ '/assets/github.gif' | relative_url }}" style="float:right" loading="lazy" />
+      </a>
+
+      <!--
+      <ul class="nav">
+        <li><a href="{{ '/' | relative_url }}">Home</a> |</li>
+        <li><a href="{{ '/blog/' | relative_url }}">Blog</a> |</li>
+        <li><a href="{{ '/projects' | relative_url }}">Projects</a> |</li>
+        <li><a target="_blank" href="https://github.com/publicdesert">Git</a></li>
+      </ul>
+    </div>
+    -->
+
+    <!-- Random button -->
+    <script type="text/javascript">
+    document.addEventListener("DOMContentLoaded", function () {
+      fetch('{{ "/assets/rndbtn.txt" | relative_url }}')
+        .then(response => response.text())
+        .then(data => {
+          const images = data.split('\n').filter(Boolean);
+          if(!images.length) return;
+          const array = new Uint32Array(1);
+          window.crypto.getRandomValues(array);
+          const index = array[0] % images.length;
+          const imgHtml = `<img src="{{ "/assets/rndbtn/" | relative_url }}${images[index]}" style="float:right">`;
+          const header = document.querySelector('.site-header');
+          if (header) header.insertAdjacentHTML('afterbegin', imgHtml);
+        })
+        .catch(error => console.error('Error loading image list:', error));
+    });
+    </script>
+    <hr>
+    <!-- End header -->
+    </div>
+    
+    
+  <main class="site-main {% if page.wide %}site-main--wide{% endif %}"
+        {% if page.max_width %}style="--content-max: {{ page.max_width }}"{% endif %}>
+    {{ content }}
+      
+  </main>
+  
+  <div class="site-footer">
+    <hr>
+    <a href="{{ '/index.html' | relative_url }}">
+      <p style="margin-bottom: 0; text-align: center;"><b>pyramiden.net</b></p>
+    </a>
+    
+    <p style="margin-top: 0; text-align: center; line-height: 1;">
+      <small>your memory?<br>your record?</small>
+    </p>
+
+  </div>
+
+
+
+  
+  </body>
+</html>
+
