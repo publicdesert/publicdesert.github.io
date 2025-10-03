@@ -1,3 +1,6 @@
+title: 'pyramiden.net'
+url: https://pyramiden.net
+
 plugins:
   - jekyll-feed
   - jekyll-sitemap
@@ -13,5 +16,7 @@ pagination:
     after: 1
   sort_field: 'date'
   sort_reverse: true
+  
+
 
 permalink: /blog/:year/:title:output_ext
